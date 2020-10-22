@@ -8,7 +8,7 @@ public class Intervals {
             "F", "F#/Gbb", "F##/Gb", "G", "G#/Abb", "G##/Ab", "A", "A#/Bbb", "A##/Bb", "B", "B#/Cb"};
     private final static Map<String, Integer> intervals = new HashMap<>();
 
-    private Intervals() {
+    static {
         intervals.put("", 0);
         intervals.put("m2", 1);
         intervals.put("M2", 2);
@@ -25,7 +25,7 @@ public class Intervals {
 
     //static boolean isIntervalASC = true;
 
-    final static private int shiftByOne = 1;
+    final static int shiftByOne = 1;
 
 
     public static String intervalConstruction(String[] args) {
@@ -94,7 +94,7 @@ public class Intervals {
                     System.out.println("notePosition="+notePosition);
                 }
             } else {
-              //  System.out.println(notes[i] + " contains(/)");
+                //  System.out.println(notes[i] + " contains(/)");
                 String[] semitones = notes[i].split("/");
                 if (semitones[0].equals(args[1]) || semitones[1].equals(args[1])) {
                     notePosition = i;
@@ -140,7 +140,7 @@ public class Intervals {
                 return semitones[0];
 
             } else {
-             //   System.out.println("semitones[1]="+semitones[1]);
+                //   System.out.println("semitones[1]="+semitones[1]);
                 return semitones[1];
             }
         }
