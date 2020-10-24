@@ -182,7 +182,6 @@ public class Intervals {
     private static String findNewNoteInList(int newNotePosition, int newDegreePosition) {
         if (!notes[newNotePosition].contains("/")) {
             return notes[newNotePosition];
-
         } else {
             String[] semitones = notes[newNotePosition].split("/");
             if (semitones[0].substring(0, 1).equals(degrees[newDegreePosition])) {
