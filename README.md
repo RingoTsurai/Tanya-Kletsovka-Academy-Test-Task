@@ -1,1 +1,1 @@
-# Tanya-Kletsovka-Academy-Test-Task
+# Tanya-Kletsovka-Test-Task
